@@ -4,12 +4,12 @@ body {
   margin: 0;
   font-family: sans-serif;
   min-width: 250px;
-  /* background: url(/images/desk.jpg) no-repeat center center fixed;  */
   background-color: #37516f;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
+  font: 16px/40px "Open Sans", sans-serif;
 }
 
 img {
@@ -36,7 +36,7 @@ img {
   text-align: center;
 }
 
-input {
+.inputAdd {
   width: 100%;
   padding: 10px 0px 10px 5px;
   font-size: 16px;
@@ -111,4 +111,49 @@ th {
 tr {
   border: none;
   height: 30px;
+}
+
+input[type=checkbox] {
+	cursor: pointer;
+	position: relative;
+  visibility: hidden;
+  display: none;
+}
+
+input[type="checkbox"]:after {
+	border: 1px solid #166B94;
+	border-radius: 3px;
+	color: #fff;
+	content: "";
+	display: block;
+	height: 16px;
+	line-height: 16px;
+	position: absolute;
+	text-align: center;
+	visibility: visible;
+	width: 16px;
+}
+
+input[type=checkbox]:checked:after {
+	border: 1px solid #979797;
+	color: #979797;
+	content: "?";
+}
+
+input[type=checkbox]:checked + label {
+	color: #979797;
+	font-weight: normal;
+	text-decoration: line-through;
+}
+
+label {
+	color: #00b1cc;
+	font-weight: bold;
+	margin-left: 12px;
+	cursor: pointer;
+}
+
+p {
+  color: #f2f2f2;
+  font-size: 12px;
 }
