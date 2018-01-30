@@ -4,7 +4,8 @@ body {
   margin: 0;
   font-family: sans-serif;
   min-width: 250px;
-  background: url(/images/desk.jpg) no-repeat center center fixed; 
+  /* background: url(/images/desk.jpg) no-repeat center center fixed;  */
+  background-color: #37516f;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
