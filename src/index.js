@@ -57,7 +57,7 @@ const ListaView = (props) => (
             <form>
                 <div>
                     <img src="images/check.png"/>
-                    <input id="inputTarefa" name="inputTarefa" autocomplete="off" value={props.inputTarefa} onChange={props.onChange} placeholder="Escreve uma tarefa" />
+                    <input id="inputTarefa" name="inputTarefa" autocomplete="off" value={props.inputTarefa} onChange={props.onChange} placeholder="Escreva uma tarefa" />
                     <button className="btnAdd" onClick={props.addTarefa}>Adicionar</button>
                 </div>
             </form>

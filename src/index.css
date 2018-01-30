@@ -1,15 +1,14 @@
-html { 
-  background: url(/images/desk.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 body {
   margin: 0;
   font-family: sans-serif;
   min-width: 250px;
+  background: url(/images/desk.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
 }
 
 img {
