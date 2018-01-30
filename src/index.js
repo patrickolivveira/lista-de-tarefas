@@ -85,7 +85,7 @@ const ListaView = (props) => (
                     }                        
                 </tbody>
             </table>
-            <p>Clique sobre a tarefa para marcá-la com concluída!</p>
+            <p>Clique sobre a tarefa para marcá-la como concluída!</p>
         </div>
   </div>
 );
