@@ -12,13 +12,16 @@ class ListaContainer extends React.Component {
 
     // Adicionando tarefa
     this.addTarefa = (ev) => {
-      ev.preventDefault();
-      const tarefas = this.state.tarefas.slice();
-      tarefas.push(this.state.inputTarefa);
-      this.setState({
-        tarefas: tarefas,
-        inputTarefa: ""
-      });
+        ev.preventDefault();
+        const tarefas = this.state.tarefas.slice();      
+        
+        if (this.state.inputTarefa !== "") {
+            tarefas.push(this.state.inputTarefa);    
+            this.setState({
+                tarefas: tarefas,
+                inputTarefa: ""
+            });
+        }
     };
 
     // Excluindo tarefas
