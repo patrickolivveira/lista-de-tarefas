@@ -1,7 +1,21 @@
+html { 
+  background: url(/images/desk.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
   min-width: 250px;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 10px;
 }
 
 .tarefaAdd {
@@ -17,26 +31,36 @@ body {
   font-family: Helvetica, Arial, sans-serif
 }
 
+::placeholder {
+  color: #c9c9c9;
+  text-align: center;
+}
+
 input {
-  border: none;
-  border-bottom: 1px solid #e0e0e0;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px 10px 5px;
   font-size: 16px;
   height: 20px;
+  background-color: #00000070;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #00b1cc;
 }
 
 label {
   float: left;
 }
 
-input:focus {
+button {
   outline: none;
-  border: none;
-  border-bottom: 2px solid #00b1cc;
 }
 
-button {
+.btnDel {
   background-color: #00b1cc;
   border: none;
   border-radius: 5px;
@@ -49,13 +73,14 @@ button {
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
-  float: right;
+  float: right;  
+  margin-right: 3%;
 }
 
 .btnAdd {
   background-color: #00b1cc;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -71,11 +96,15 @@ button {
 table {
   width: 100%;
   margin-top: 10px;
-  border: 1px solid #e0e0e0;
+  border: none;  
+  background-color: #00000070;
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding-bottom: 20px;
 }
 
 th {
-  border-bottom: 1px solid #e0e0e0;
+  border-radius: 20px;
   height: 40px;
 }
 

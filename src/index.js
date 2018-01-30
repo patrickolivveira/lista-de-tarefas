@@ -56,7 +56,8 @@ const ListaView = (props) => (
         <div className="tarefaAdd">
             <form>
                 <div>
-                    <input id="inputTarefa" name="inputTarefa" value={props.inputTarefa} onChange={props.onChange} placeholder="Tarefa" />
+                    <img src="images/check.png"/>
+                    <input id="inputTarefa" name="inputTarefa" autocomplete="off" value={props.inputTarefa} onChange={props.onChange} placeholder="Escreve uma tarefa" />
                     <button className="btnAdd" onClick={props.addTarefa}>Adicionar</button>
                 </div>
             </form>
@@ -75,7 +76,7 @@ const ListaView = (props) => (
                         <tr>
                             <td><input type="checkbox" id={index} /></td>
                             <td><label for={index}>{tarefa}</label></td>
-                            <td><button onClick={() => props.removeTarefa(index)}>Excluir</button></td>
+                            <td><button className="btnDel" onClick={() => props.removeTarefa(index)}>Excluir</button></td>
                         </tr>
                         ))
                     }                        
