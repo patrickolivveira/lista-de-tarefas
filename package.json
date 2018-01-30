@@ -1,0 +1,25 @@
+{
+  "name": "lista-de-tarefas",
+  "version": "0.1.0",
+  "private": true,
+  "browserslist": [
+    "> 2%",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0"
+  }
+}
